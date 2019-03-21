@@ -6,11 +6,13 @@ set termencoding=utf-8
 " disable vi compatibility (emulation of old bugs)
 set nocompatible
 
-" use indentation of previous line
+" setting for indentation
 set autoindent
-
-" use intelligent indentation for C
 set smartindent
+set shiftwidth=4
+
+" size of tab
+set tabstop=4
 
 " wrap lines at 120 chars. 80 is somewaht antiquated with nowadays displays.
 set textwidth=120
@@ -30,9 +32,6 @@ set showmatch
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
 
-" size of tab
-set tabstop=4
-
 " enable to delete with backspace
 set backspace=indent,eol,start
 
@@ -45,5 +44,11 @@ set noswapfile
 " yank to clipboard
 set clipboard=unnamed,autoselect
 
-" tab to space
-set expandtab
+" visual setting for MacVim "
+set background=dark
+colorscheme hybrid
+set guifont=Menlo-Regular:h14
+
+" setting for beep
+set visualbell
+set t_vb
