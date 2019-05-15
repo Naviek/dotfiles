@@ -1,3 +1,6 @@
+" templete on extension
+autocmd BufNewFile *.cpp 0r ~/.vim/templete/cpp.cpp
+
 " set UTF-8 encoding
 set enc=utf-8
 set fenc=utf-8
@@ -52,3 +55,7 @@ set guifont=Menlo-Regular:h14
 " setting for beep
 set visualbell
 set t_vb
+
+" cursor moving when wrapping
+nnoremap j gj
+nnoremap k gk
