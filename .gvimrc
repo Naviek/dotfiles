@@ -1,6 +1,16 @@
 " templete on extension
 autocmd BufNewFile *.cpp 0r ~/.vim/templete/cpp.cpp
 
+" no backup files
+set nobackup
+" no swap files
+set noswapfile
+" auto reload when editing files changed
+set autoread
+" show typing command on status
+set showcmd
+
+
 " set UTF-8 encoding
 set enc=utf-8
 set fenc=utf-8
@@ -13,6 +23,7 @@ set nocompatible
 set autoindent
 set smartindent
 set shiftwidth=4
+set list listchars=tab:\▸\-
 
 " size of tab
 set tabstop=4
