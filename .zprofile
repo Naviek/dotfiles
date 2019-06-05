@@ -65,3 +65,7 @@ fi
 # User setting below
 PATH="/Applications/MacVim.app/Contents/bin:$PATH"
 PATH="$HOME/.nodebrew/current/bin:$PATH"
+
+# For completion
+autoload -U compinit
+compinit
